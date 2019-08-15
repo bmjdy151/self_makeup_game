@@ -6,3 +6,77 @@
 html {
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
+
+h1{
+  color: indianred;
+  text-align: center;
+}
+
+#videoel{
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+  -o-transform : scaleX(-1);
+  -webkit-transform : scaleX(-1);
+  transform : scaleX(-1);
+  -ms-filter : fliph; /*IE*/
+  filter : fliph; /*IE*/
+}
+
+#overlay, #webgl {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -o-transform : scaleX(-1);
+  -webkit-transform : scaleX(-1);
+  transform : scaleX(-1);
+  -ms-filter : fliph; /*IE*/
+  filter : fliph; /*IE*/
+}
+
+#container {
+  position : relative;
+  width : 370px;
+  /*margin : 0px auto;*/
+}
+
+.lip-container{
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content: space-around;
+}
+.lip{
+  background-color: red;
+	width:71px;
+	height:71px;
+	float:left;
+	margin:10px;
+  padding:20px;
+  border-radius: 50%;
+	font-size:64px;
+}
+
+.button-container{
+  width:100%;
+  display: flex; 
+  justify-content: center;
+}
+.btn{
+  background-color: gray;
+  color: aliceblue;
+	width:150px;
+  height:30px;
+  border-radius: 10%;
+}
+
+.start{
+  background-color: lightgreen;
+  color: aliceblue;
+	width:150px;
+  height:30px;
+  border-radius: 10%;
+}
+
+.masks {
+  display: none;
+}
